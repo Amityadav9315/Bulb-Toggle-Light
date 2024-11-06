@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Toggle Bulb</title>
+</head>
+<body>
+
+<h2>JavaScript Bulb Toggle</h2>
+
+<p>Click the button to turn the light on and off.</p>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<br><br>
+<button onclick="toggleLight()">Toggle Light</button>
+
+<script>
+    function toggleLight() {
+        var image = document.getElementById('myImage');
+        if (image.src.includes('pic_bulboff.gif')) {
+            image.src = 'jzk_os.gif'; // Turn on the light
+        } else {
+            image.src = 'pic_bulboff.gif'; // Turn off the light
+        }
+    }
+</script>
+
+</body>
+</html>
